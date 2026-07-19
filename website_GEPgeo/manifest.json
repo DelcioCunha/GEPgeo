@@ -1,0 +1,14 @@
+{
+  "name": "GEPGEO Consultoria",
+  "short_name": "GEPGEO",
+  "description": "Topografia, Cartografia, Engenharia Civil e Formação Profissional em Angola.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a2540",
+  "theme_color": "#0a2540",
+  "lang": "pt-AO",
+  "icons": [
+    { "src": "assets/icons/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

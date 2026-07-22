@@ -1,6 +1,6 @@
 # Website GEPGEO Consultoria — Guia de Configuração
 
-Site estático (HTML/CSS/JS puro, sem dependências de build) — 12 páginas,
+Site estático (HTML/CSS/JS puro, sem dependências de build) — 11 páginas,
 bilingue PT/EN, pronto a publicar em qualquer alojamento.
 
 ## 1. Estrutura de pastas
@@ -9,13 +9,14 @@ bilingue PT/EN, pronto a publicar em qualquer alojamento.
 site/
 ├── index.html, servicos.html, portfolio.html, produtos.html,
 │   sobre-nos.html, galeria.html, blog.html, noticias.html,
-│   faq.html, area-cliente.html, contactos.html, 404.html
+│   faq.html, contactos.html, 404.html
 ├── robots.txt          → indexação no Google
 ├── sitemap.xml          → mapa do site para o Google Search Console
 ├── manifest.json         → ícone "adicionar ao ecrã inicial" (mobile)
 └── assets/
     ├── css/style.css     → todo o design (cores, tipografia, layout)
     ├── js/main.js       → navegação, formulários, pesquisa, galeria, WhatsApp
+    ├── js/cart.js       → carrinho de cursos/serviços
     ├── js/i18n.js       → traduções PT/EN
     ├── img/            → fotografias da empresa
     └── icons/           → favicons e logótipo
@@ -121,14 +122,7 @@ browser do visitante). Todo o texto novo que adicionar deve usar o atributo
 `data-i18n="chave"` e ser acrescentado ao dicionário no topo de
 `assets/js/i18n.js` (objecto `TRANSLATIONS.pt` e `TRANSLATIONS.en`).
 
-## 6. Área do Cliente
-
-Está marcada como "brevemente disponível", conforme combinado — sem
-login funcional por agora. Quando quiser avançar para uma área de cliente
-real (autenticação, downloads de relatórios, acompanhamento de projectos),
-isso já vai exigir um backend/base de dados — quando chegar a essa fase, avise-nos.
-
-## 7. Carrinho de Cursos e Serviços
+## 6. Carrinho de Cursos e Serviços
 
 Nas páginas **Produtos** e **Serviços**, cada curso/pacote/categoria tem um botão
 **"Adicionar ao carrinho"**. O cliente pode adicionar cursos e serviços ao mesmo
@@ -141,15 +135,22 @@ aba correspondente: cursos na aba **"Cursos"**, serviços na aba
 carrinho fica guardado no browser do cliente (localStorage), por isso
 mantém-se mesmo que ele navegue entre páginas ou feche e volte a abrir o site.
 
-**Preços**: os preços em `produtos.html` (cursos e pacotes de serviço) são
-**valores de referência para o mercado angolano**, calibrados a partir de
-pesquisa sobre formação técnica e serviços de topografia em Angola — mas não
-são preços oficiais confirmados. Reveja e ajuste-os em
-`pages/page_produtos.py` (se quiser voltar a gerar o site com `build.py`) ou
-directamente em `produtos.html`, procurando por `data-cart-price` e pelo texto
-dentro de `<span class="price">`.
+**Preços dos cursos**: os 10 cursos em `produtos.html` (Cursos Técnicos
+Avançados + Cursos de Operador de Equipamentos) usam os preços e durações
+reais do calendário de formação GEPGEO (INEFOP Licença Nº 1332.01/LDA).
+Propositadamente **não mostramos datas de início/fim** no site, para não
+obrigar a atualizar o site sempre que o calendário mudar — as datas
+continuam a ser geridas à parte (ex: panfleto, WhatsApp, redes sociais) e
+combinadas directamente com o cliente após o pedido de inscrição. Quando o
+calendário de cursos mudar (novos cursos, preços ou durações), edite
+directamente em `produtos.html`: procure por `data-cart-price`, pelo texto
+dentro de `<span class="price">` e por `<p class="coord">` (duração).
 
-## 8. Pré-visualização de email
+**Preços dos pacotes de serviço** (Levantamento Residencial, Georreferenciamento
+Empresarial, Mapeamento com Drone) continuam a ser **valores de referência**
+estimados para o mercado — ajuste-os da mesma forma se necessário.
+
+## 7. Pré-visualização de email
 
 Todos os 4 formulários de Contactos (Contacto Geral, Solicitar Serviço,
 Cursos, Agendamento) mostram, em tempo real, uma pré-visualização de como o
@@ -157,7 +158,7 @@ email ficará — assunto, remetente e corpo — incluindo automaticamente a lis
 de itens do carrinho quando aplicável. Isto ajuda o cliente a confirmar que a
 informação está correcta antes de enviar.
 
-## 9. O que fazer para adicionar mais fotos ao site
+## 8. O que fazer para adicionar mais fotos ao site
 
 1. Coloque as novas imagens em `assets/img/`.
 2. Para a Galeria: edite a lista `IMAGES` no início do ficheiro

@@ -27,26 +27,42 @@ site/
 
 ### A. Formulários (Contacto, Solicitar Serviço, Cursos, Agendamento) — EmailJS gratuito
 
-Os 4 formulários em `contactos.html` já estão ligados ao EmailJS, só falta ativar a conta:
+Os 4 formulários em `contactos.html` já estão ligados ao EmailJS. O plano
+gratuito do EmailJS só permite **2 templates**, por isso os 4 formulários
+**partilham 2 templates** — o próprio site monta o assunto e o corpo do
+email em JavaScript antes de enviar (ver `window.buildEmailPayload` em
+`contactos.html`), por isso cada template só precisa de 4 campos genéricos:
+`{{nome}}`, `{{email}}`, `{{assunto}}` e `{{corpo}}`.
 
-1. Crie uma conta gratuita em **https://www.emailjs.com** (plano grátis: 200 emails/mês).
-2. Em **Email Services**, adicione o Gmail `gpgeoconsultoria@gmail.com` → copie o **Service ID**.
-3. Em **Email Templates**, crie 4 templates (um para cada formulário: Contacto, Solicitar Serviço, Cursos, Agendamento) → copie os 4 **Template ID**. Os campos do formulário (nome, email, telefone, mensagem, etc.) já chegam automaticamente ao template — use `{{nome}}`, `{{email}}`, `{{mensagem}}`, etc. dentro do template do EmailJS. Os formulários "Solicitar Serviço" e "Cursos" enviam também um campo `{{itens_carrinho}}` com a lista dos serviços/cursos que o cliente adicionou ao carrinho — inclua esse campo no corpo do template para que a equipa veja exactamente o que foi selecionado.
-4. Em **Account → General**, copie a **Public Key**.
-5. Abra `assets/js/main.js` e edite o topo do ficheiro (linhas ~14-25):
+| Template no EmailJS | Usado por |
+|---|---|
+| Template "geral" | Contacto Geral **+** Agendamento |
+| Template "pedido" | Solicitar Serviço **+** Cursos |
+
+1. Crie uma conta gratuita em **https://www.emailjs.com** (plano grátis: 200 emails/mês, 2 templates).
+2. Em **Email Services**, adicione o Gmail para onde quer receber os pedidos → copie o **Service ID**.
+3. Em **Email Templates**, crie **2 templates** (não 4):
+   - **Subject** de cada um: `{{assunto}}`
+   - **Content** de cada um: `{{corpo}}` (mais uma assinatura fixa, se quiser)
+   - **To Email:** o email onde quer receber
+   - **Reply To:** `{{email}}` (assim o botão "Responder" do Gmail vai directo para o cliente)
+   - Copie o **Template ID** de cada um.
+4. Em **Account → API Keys**, copie a **Public Key**.
+5. Abra `assets/js/main.js` e edite o topo do ficheiro:
 
 ```js
 emailjs: {
   publicKey: "SUBSTITUIR_PUBLIC_KEY",
   serviceId: "SUBSTITUIR_SERVICE_ID",
   templates: {
-    contacto: "SUBSTITUIR_TEMPLATE_CONTACTO",
-    servico: "SUBSTITUIR_TEMPLATE_SERVICO",
-    curso: "SUBSTITUIR_TEMPLATE_CURSO",
-    agendamento: "SUBSTITUIR_TEMPLATE_AGENDAMENTO"
+    geral: "SUBSTITUIR_TEMPLATE_GERAL",    // Contacto Geral + Agendamento
+    pedido: "SUBSTITUIR_TEMPLATE_PEDIDO"   // Solicitar Serviço + Cursos
   }
 }
 ```
+
+> Consulte `EMAILJS-SETUP.md` (na raiz do projeto) para o guia completo com
+> o conteúdo exacto dos templates e mais explicações.
 
 Substitua pelos valores reais. Sem isto, os formulários mostram uma mensagem de erro amigável ao tentar enviar.
 

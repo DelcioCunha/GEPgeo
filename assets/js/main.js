@@ -20,24 +20,30 @@
     lng: 13.2302,
     social: {
       facebook: "https://www.facebook.com/gepgeo.engenheria",
-      instagram: "https://instagram.com/gepgeoconsultoria",
-      linkedin: "https://linkedin.com/company/gepgeoconsultoria",
-      youtube: "https://youtube.com/@gepgeoconsultoria"
+      linkedin: "https://linkedin.com/company/gepgeoconsultoria"
     },
     // EmailJS — criar conta gratuita em https://www.emailjs.com
-    // 1) Adicionar um "Email Service" (Gmail) e obter SERVICE_ID
-    // 2) Criar um "Email Template" para cada formulário e obter os TEMPLATE_ID
-    // 3) Copiar a PUBLIC_KEY em Account > General
+    // O plano gratuito só permite 2 templates, por isso os 4 formulários
+    // partilham 2 templates (o site monta o assunto/corpo do email antes de
+    // enviar — ver window.buildEmailPayload em contactos.html):
+    //   "geral"  → usado por Contacto Geral + Agendamento
+    //   "pedido" → usado por Solicitar Serviço + Cursos
     emailjs: {
-      publicKey: "SUBSTITUIR_PUBLIC_KEY",
-      serviceId: "SUBSTITUIR_SERVICE_ID",
+      publicKey: "02CAGxKr0jIaa-CqG",
+      serviceId: "service_p929i2p",
       templates: {
-        contacto: "SUBSTITUIR_TEMPLATE_CONTACTO",
-        servico: "SUBSTITUIR_TEMPLATE_SERVICO",
-        curso: "SUBSTITUIR_TEMPLATE_CURSO",
-        agendamento: "SUBSTITUIR_TEMPLATE_AGENDAMENTO"
+        geral: "template_jkfv32p",   // Contacto Geral + Agendamento
+        pedido: "template_72ixmfw"   // Solicitar Serviço + Cursos
       }
     }
+  };
+
+  // A que template (geral/pedido) cada formulário da página Contactos pertence
+  const FORM_TEMPLATE_GROUP = {
+    contacto: "geral",
+    agendamento: "geral",
+    servico: "pedido",
+    curso: "pedido"
   };
 
   const cfg = window.GEPGEO_CONFIG;
@@ -245,7 +251,8 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
 
       const formType = form.dataset.form; // contacto | servico | curso | agendamento
-      const templateId = cfg.emailjs.templates[formType];
+      const templateGroup = FORM_TEMPLATE_GROUP[formType] || formType;
+      const templateId = cfg.emailjs.templates[templateGroup];
       const originalLabel = submitBtn.textContent;
       submitBtn.disabled = true;
       submitBtn.textContent = "…";
@@ -253,7 +260,11 @@
 
       loadEmailJS((err) => {
         if (err) return showError();
-        const data = Object.fromEntries(new FormData(form).entries());
+        // window.buildEmailPayload (definido em contactos.html) monta {nome, email, assunto, corpo}
+        // com exactamente o mesmo texto mostrado na pré-visualização do email.
+        const data = typeof window.buildEmailPayload === "function"
+          ? window.buildEmailPayload(formType)
+          : Object.fromEntries(new FormData(form).entries());
         window.emailjs.send(cfg.emailjs.serviceId, templateId, data).then(showSuccess).catch(showError);
       });
 

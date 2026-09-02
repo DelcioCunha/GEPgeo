@@ -62,21 +62,21 @@
 
     "topografia-geral": {
       pt: {
-        intro: "Fundamentos teóricos e prática intensiva de campo com os principais instrumentos de levantamento topográfico.",
+        intro: "Fundamentos teóricos e prática intensiva de campo com os principais instrumentos de levantamento topográfico, com processamento de dados em AutoCad Civil 3D.",
         highlights: [
           "Operação de estação total, nível e GPS",
           "Métodos de levantamento planimétrico e altimétrico",
-          "Cálculo de coordenadas e desenho de plantas",
+          "Processamento de dados de campo e desenho de plantas em AutoCad Civil 3D",
           "Boas práticas de segurança e organização de campo"
         ],
         audience: "Quem está a iniciar-se em topografia ou quer consolidar as bases teóricas e práticas da profissão."
       },
       en: {
-        intro: "Theoretical foundations and intensive field practice with the main surveying instruments.",
+        intro: "Theoretical foundations and intensive field practice with the main surveying instruments, with field data processing in AutoCAD Civil 3D.",
         highlights: [
           "Operating total stations, levels and GPS",
           "Planimetric and altimetric survey methods",
-          "Coordinate calculation and plan drafting",
+          "Field data processing and plan drafting in AutoCAD Civil 3D",
           "Good field safety and organisation practices"
         ],
         audience: "Anyone starting out in surveying, or wanting to consolidate the theoretical and practical basics of the profession."
@@ -108,7 +108,7 @@
 
     "fiscalizacao-curso": {
       pt: {
-        intro: "Preparação prática para o acompanhamento técnico de obras públicas, com foco em controlo de qualidade e conformidade de projecto.",
+        intro: "Preparação prática para o acompanhamento técnico de obras, com foco em controlo de qualidade e conformidade de projecto.",
         highlights: [
           "Leitura e verificação de projectos de execução",
           "Controlo de qualidade de materiais e execução",
@@ -118,7 +118,7 @@
         audience: "Fiscais de obra, engenheiros e técnicos que acompanham empreitadas de construção civil."
       },
       en: {
-        intro: "Practical preparation for the technical supervision of public works, focused on quality control and design compliance.",
+        intro: "Practical preparation for technical site supervision, focused on quality control and design compliance.",
         highlights: [
           "Reading and checking execution drawings",
           "Quality control of materials and execution",

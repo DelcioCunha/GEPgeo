@@ -19,8 +19,7 @@
     lat: -8.8964,
     lng: 13.2302,
     social: {
-      facebook: "https://www.facebook.com/gepgeo.engenheria",
-      linkedin: "https://linkedin.com/company/gepgeoconsultoria"
+      facebook: "https://www.facebook.com/gepgeo.engenheria"
     },
     // EmailJS — criar conta gratuita em https://www.emailjs.com
     // O plano gratuito só permite 2 templates, por isso os 4 formulários

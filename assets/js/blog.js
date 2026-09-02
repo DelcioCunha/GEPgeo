@@ -9,7 +9,7 @@
   const ARTICLES = {
 
     featured: {
-      image: "assets/img/new-3.jpeg",
+      image: "assets/img/blog/featured.jpg",
       pt: {
         cat: "Topografia", date: "8 min de leitura",
         title: "GPS RTK vs. Estação Total: quando usar cada equipamento",
@@ -51,7 +51,7 @@
     },
 
     p1: {
-      image: "assets/img/galeria/galeria-05.jpg",
+      image: "assets/img/blog/p1.jpg",
       pt: {
         cat: "Geoprocessamento", date: "5 min de leitura",
         title: "O que é georreferenciamento e porque o seu terreno precisa dele",
@@ -93,7 +93,7 @@
     },
 
     p2: {
-      image: "assets/img/galeria/galeria-03.jpg",
+      image: "assets/img/blog/p2.jpg",
       pt: {
         cat: "Drones", date: "6 min de leitura",
         title: "Mapeamento aerofotogramétrico: mais rapidez em grandes áreas",
@@ -137,7 +137,7 @@
     },
 
     p3: {
-      image: "assets/img/new-4.jpeg",
+      image: "assets/img/blog/p3.jpg",
       pt: {
         cat: "Formação", date: "6 min de leitura",
         title: "5 competências essenciais para um técnico de topografia",
@@ -177,7 +177,7 @@
     },
 
     p4: {
-      image: "assets/img/galeria/galeria-14.jpg",
+      image: "assets/img/blog/p4.jpg",
       pt: {
         cat: "Engenharia Civil", date: "5 min de leitura",
         title: "Cálculo de volumes: a base do orçamento de terraplanagem",
@@ -217,7 +217,7 @@
     },
 
     p5: {
-      image: "assets/img/equipa-04.jpeg",
+      image: "assets/img/blog/p5.jpg",
       pt: {
         cat: "SIG/GIS", date: "5 min de leitura",
         title: "QGIS ou ArcGIS: qual escolher para o seu projecto?",
@@ -255,7 +255,7 @@
     },
 
     p6: {
-      image: "assets/img/equipa-06.jpeg",
+      image: "assets/img/blog/p6.jpg",
       pt: {
         cat: "Fiscalização", date: "6 min de leitura",
         title: "Fiscalização técnica: como evitar desvios de projecto na obra",
@@ -294,6 +294,50 @@
           <p>Regular, documented site visits (not just when there's a problem), fast, direct communication with the contractor when a deviation appears, and clear reports the client can actually understand — not just technical jargon.</p>
           <h3>Why it's worth investing in</h3>
           <p>Fixing a deviation identified the week it happens costs a fraction of demolishing and redoing work that's already progressed. Technical supervision often pays for itself many times over during a project.</p>
+        `
+      }
+    },
+
+    p7: {
+      image: "assets/img/campo-01.jpeg",
+      pt: {
+        cat: "Formação", date: "5 min de leitura",
+        title: "Aulas de campo com estudantes de Engenharia de Minas na Lunda Sul",
+        body: `
+          <p>Gostamos de partilhar com quem nos acompanha parte do trabalho que desenvolvemos. Recentemente estivemos no terreno com estudantes do curso de Engenharia de Minas do Instituto Superior Politécnico da Lunda Sul, numa aula prática de levantamento topográfico.</p>
+          <h3>Porque a topografia é essencial na mineração</h3>
+          <p>Em qualquer projecto de mineração, os levantamentos planimétricos e altimétricos são a base para medir e aferir áreas de corte, assim como para determinar volumes de material movimentado. Sem dados topográficos rigorosos, é impossível controlar com precisão a saída de minério ou o volume de estéril removido.</p>
+          <h3>O que fizemos em campo</h3>
+          <p>Com os estudantes, aplicámos o levantamento topográfico directamente a um cenário próximo da realidade de uma lavra: marcação de pontos de controlo, recolha de dados planimétricos e altimétricos, e discussão sobre como estes dados alimentam depois o cálculo de volumes em software como o AutoCAD Civil 3D.</p>
+          <ul>
+            <li>Levantamento planimétrico e altimétrico de áreas de corte</li>
+            <li>Determinação de volumes a partir dos dados recolhidos</li>
+            <li>Boas práticas de precisão em contexto de mineração</li>
+            <li>Ligação entre o trabalho de campo e o processamento em gabinete</li>
+          </ul>
+          <h3>Uma forma de retribuir conhecimento</h3>
+          <p>Para a GEPGEO, este tipo de parceria com institutos superiores é uma forma natural de retribuir à comunidade académica o conhecimento e a experiência que fomos acumulando em projectos reais — e de ajudar a formar os técnicos e engenheiros que o país vai continuar a precisar.</p>
+          <p>Se a sua instituição de ensino tem interesse numa colaboração semelhante, ou se a sua empresa precisa de apoio em consultoria e cálculo de volumes para mineração, terraplanagem ou obras lineares, estamos disponíveis para conversar.</p>
+        `
+      },
+      en: {
+        cat: "Training", date: "5 min read",
+        title: "Field classes with Mining Engineering students in Lunda Sul",
+        body: `
+          <p>We enjoy sharing part of our work with everyone who follows us. We recently spent a day in the field with students from the Mining Engineering course at Instituto Superior Politécnico da Lunda Sul, in a hands-on topographic surveying class.</p>
+          <h3>Why surveying is essential in mining</h3>
+          <p>In any mining project, planimetric and altimetric surveys are the foundation for measuring cut areas and determining the volume of material moved. Without rigorous topographic data, it's impossible to accurately control ore output or the volume of waste removed.</p>
+          <h3>What we did in the field</h3>
+          <p>With the students, we applied topographic surveying directly to a scenario close to a real mining operation: setting control points, collecting planimetric and altimetric data, and discussing how this data later feeds volume calculations in software such as AutoCAD Civil 3D.</p>
+          <ul>
+            <li>Planimetric and altimetric surveying of cut areas</li>
+            <li>Determining volumes from the collected data</li>
+            <li>Good precision practices in a mining context</li>
+            <li>The link between fieldwork and office data processing</li>
+          </ul>
+          <h3>A way of giving back</h3>
+          <p>For GEPGEO, this kind of partnership with higher education institutes is a natural way to give back to the academic community the knowledge and experience we've built up on real projects — and to help train the technicians and engineers the country will keep needing.</p>
+          <p>If your institution is interested in a similar collaboration, or if your company needs consulting and volume calculation for mining, earthworks or linear projects, we're happy to talk.</p>
         `
       }
     }

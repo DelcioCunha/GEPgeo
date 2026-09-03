@@ -299,7 +299,7 @@
     },
 
     p7: {
-      image: "assets/img/campo-01.jpeg",
+      image: "assets/img/blog/p7.jpg",
       pt: {
         cat: "Formação", date: "5 min de leitura",
         title: "Aulas de campo com estudantes de Engenharia de Minas na Lunda Sul",
@@ -338,6 +338,362 @@
           <h3>A way of giving back</h3>
           <p>For GEPGEO, this kind of partnership with higher education institutes is a natural way to give back to the academic community the knowledge and experience we've built up on real projects — and to help train the technicians and engineers the country will keep needing.</p>
           <p>If your institution is interested in a similar collaboration, or if your company needs consulting and volume calculation for mining, earthworks or linear projects, we're happy to talk.</p>
+        `
+      }
+    },
+
+    p8: {
+      image: "assets/img/blog/p8.jpg",
+      pt: {
+        cat: "SIG/GIS", date: "5 min de leitura",
+        title: "O que é um Sistema de Informação Geográfica (SIG)?",
+        body: `
+          <p>Um Sistema de Informação Geográfica (SIG, ou GIS em inglês) é um sistema de computador que analisa e exibe informação geograficamente referenciada. Ele usa dados anexados a um local exclusivo, e permite capturar, armazenar, verificar e exibir dados relacionados a posições na superfície da Terra.</p>
+          <h3>O que o SIG consegue mostrar</h3>
+          <p>O SIG pode representar num único mapa muitos tipos diferentes de dados — ruas, prédios, vegetação, cursos de água — permitindo às pessoas ver, analisar e compreender padrões e relações com muito mais facilidade do que olhando para tabelas de números.</p>
+          <p>Perguntas como "onde estão localizados os cursos de água de uma base de dados geográfica?", "onde foi colhida uma determinada amostra de rocha?" ou "onde estão, exactamente, todas as bocas de incêndio de uma cidade?" são o tipo de resposta que um SIG dá com precisão e rapidez.</p>
+          <h3>Um exemplo prático</h3>
+          <p>Se, por exemplo, uma planta rara for observada em três lugares diferentes, a análise SIG pode mostrar que essas plantas estão todas em encostas voltadas a norte, acima de uma determinada elevação, e em zonas que recebem mais de uma certa quantidade de chuva por ano. O SIG consegue então destacar todos os outros locais na área com condições semelhantes — para que os investigadores saibam exactamente onde procurar mais exemplares.</p>
+          <p>Outro exemplo: conhecendo a localização das machambas que usam um determinado fertilizante, a análise SIG cruzando essas localizações com riachos, elevações e precipitação permite prever quais os cursos de água que provavelmente vão receber esse fertilizante rio abaixo.</p>
+          <h3>Onde se aplica</h3>
+          <p>Estes são apenas alguns exemplos dos muitos usos do SIG em ciências da terra, biologia, gestão de recursos naturais, planeamento urbano, cadastro, engenharia civil e muitos outros campos — incluindo o trabalho técnico que desenvolvemos diariamente na GEPGEO.</p>
+          <p><em>Referência: USGS, Biblioteca de Recursos.</em></p>
+        `
+      },
+      en: {
+        cat: "GIS", date: "5 min read",
+        title: "What is a Geographic Information System (GIS)?",
+        body: `
+          <p>A Geographic Information System (GIS) is a computer system that analyses and displays geographically referenced information. It uses data attached to a unique location, and lets you capture, store, check and display data related to positions on the Earth's surface.</p>
+          <h3>What GIS can show</h3>
+          <p>GIS can represent many different kinds of data on a single map — streets, buildings, vegetation, waterways — letting people see, analyse and understand patterns and relationships far more easily than by looking at tables of numbers.</p>
+          <p>Questions like "where are the waterways in a given geographic database?", "where was a particular rock sample collected?" or "exactly where are all the fire hydrants in a city?" are exactly the kind of answer a GIS delivers quickly and accurately.</p>
+          <h3>A practical example</h3>
+          <p>If, for example, a rare plant is observed in three different places, GIS analysis can reveal that these plants are all on north-facing slopes, above a certain elevation, and in areas receiving more than a certain amount of rainfall per year. GIS can then highlight every other location in the area with similar conditions — so researchers know exactly where to look for more specimens.</p>
+          <p>Another example: knowing the location of farms that use a specific fertiliser, GIS analysis combining those locations with streams, elevation and rainfall can show which streams are likely to carry that fertiliser downstream.</p>
+          <h3>Where it's applied</h3>
+          <p>These are just a few examples of the many uses of GIS in earth sciences, biology, natural resource management, urban planning, land registry and civil engineering — including the technical work we carry out every day at GEPGEO.</p>
+          <p><em>Reference: USGS, Resource Library.</em></p>
+        `
+      }
+    },
+
+    p9: {
+      image: "assets/img/blog/p9.jpg",
+      pt: {
+        cat: "Topografia", date: "4 min de leitura",
+        title: "Conheça os tipos de norte: magnético, geográfico e de quadrícula",
+        body: `
+          <p>Nem todos os "nortes" apontam exactamente para o mesmo sítio. Na topografia e na navegação, é essencial saber distinguir três tipos diferentes de norte.</p>
+          <h3>Norte Magnético</h3>
+          <p>É o norte indicado pela bússola — muito utilizado na navegação e na Astronomia. Segue as linhas do campo magnético terrestre, que não coincidem exactamente com o eixo de rotação do planeta.</p>
+          <h3>Norte Geográfico</h3>
+          <p>Também conhecido como norte verdadeiro, é a direcção que tem em conta o eixo da Terra — a linha imaginária que passa no centro do planeta entre os polos Norte e Sul. Como o eixo de rotação não varia com o tempo, esta é a referência perfeita para orientações precisas, e pode ser encontrado com ferramentas giroscópicas buscadoras de norte.</p>
+          <h3>Norte de Quadrícula</h3>
+          <p>É a direcção que se obtém quando se desenha um mapa da Terra num papel plano. Nos mapas, vemos linhas paralelas que marcam os meridianos — vistas de perto podem parecer rectas, mas na realidade não são verdadeiramente paralelas, porque convergem nas regiões dos polos Norte e Sul.</p>
+          <p>Compreender a diferença entre estes três nortes é essencial para qualquer trabalho topográfico rigoroso, especialmente quando se cruzam dados de bússola, GPS e cartografia num mesmo projecto.</p>
+        `
+      },
+      en: {
+        cat: "Surveying", date: "4 min read",
+        title: "Types of north: magnetic, geographic and grid",
+        body: `
+          <p>Not every "north" points to exactly the same place. In surveying and navigation, it's essential to tell three different types of north apart.</p>
+          <h3>Magnetic North</h3>
+          <p>This is the north shown by a compass — widely used in navigation and astronomy. It follows the lines of the Earth's magnetic field, which don't exactly coincide with the planet's rotation axis.</p>
+          <h3>Geographic North</h3>
+          <p>Also known as true north, this is the direction that accounts for the Earth's axis — the imaginary line running through the centre of the planet between the North and South Poles. Because the rotation axis doesn't change over time, this is the perfect reference for precise orientation, and can be found using gyroscopic north-seeking instruments.</p>
+          <h3>Grid North</h3>
+          <p>This is the direction obtained when a map of the Earth is drawn on flat paper. On maps we see parallel lines marking the meridians — up close they may look straight, but they aren't truly parallel, since they converge at the North and South Pole regions.</p>
+          <p>Understanding the difference between these three norths is essential for any rigorous surveying work, especially when combining compass, GPS and cartographic data in the same project.</p>
+        `
+      }
+    },
+
+    p10: {
+      image: "assets/img/blog/p10.jpg",
+      pt: {
+        cat: "Geoprocessamento", date: "6 min de leitura",
+        title: "Benefícios do Cadastro Técnico Multifinalitário (CTM)",
+        body: `
+          <p>Um registo cadastral é um registo técnico de imóveis, ligações de água potável, lagos, monumentos e outros elementos situados num território. Garante a segurança jurídica dos indivíduos e do Estado, promovendo o desenvolvimento da sociedade.</p>
+          <h3>O que é o Cadastro Técnico Multifinalitário</h3>
+          <p>Segundo Blachut et al. (1974), o Cadastro Técnico Multifinalitário (CTM) pode ser entendido como um sistema de registo dos elementos espaciais que representam a estrutura urbana, constituído por uma componente geométrica e outra descritiva, que lhe conferem agilidade e diversidade no fornecimento de dados para diferentes funções — incluindo o planeamento urbano.</p>
+          <h3>Principais benefícios de um cadastro actualizado</h3>
+          <ul>
+            <li>Melhor gestão de resíduos sólidos</li>
+            <li>Conservação do património público</li>
+            <li>Melhoria na prestação de serviços básicos (escolas, centros profissionais, gestão de mercados informais)</li>
+            <li>Segurança jurídica</li>
+            <li>Desenvolvimento de infra-estrutura (parques, ciclovias)</li>
+          </ul>
+          <h3>Porque isto importa para os municípios</h3>
+          <p>A única forma que o poder público de qualquer nação tem para solucionar os problemas que afectam as suas populações é compreender o que acontece, através de estudos, análises e pesquisas. Por isso, podemos afirmar que muitos dos nossos municípios carecem de uma estrutura que é a base para todo e qualquer serviço destinado à população.</p>
+          <p>Para minimizar este problema, é necessário que os municípios tenham um Cadastro Técnico Multifinalitário actualizado, bem elaborado e com uma representação cartográfica acurada — a base sobre a qual assenta uma gestão territorial eficaz.</p>
+        `
+      },
+      en: {
+        cat: "Geoprocessing", date: "6 min read",
+        title: "Benefits of a Multipurpose Technical Cadastre (CTM)",
+        body: `
+          <p>A cadastral register is a technical record of properties, drinking-water connections, lakes, monuments and other elements located within a territory. It guarantees legal certainty for individuals and the State, and promotes the development of society.</p>
+          <h3>What a Multipurpose Technical Cadastre is</h3>
+          <p>According to Blachut et al. (1974), a Multipurpose Technical Cadastre (CTM) can be understood as a registration system for the spatial elements that represent the urban structure, made up of a geometric component and a descriptive one, which together give it the agility and versatility to supply data for different functions — including urban planning.</p>
+          <h3>Key benefits of an up-to-date cadastre</h3>
+          <ul>
+            <li>Better solid-waste management</li>
+            <li>Conservation of public assets</li>
+            <li>Improved delivery of basic services (schools, professional centres, management of informal markets)</li>
+            <li>Legal certainty</li>
+            <li>Infrastructure development (parks, cycle paths)</li>
+          </ul>
+          <h3>Why this matters for municipalities</h3>
+          <p>The only way any nation's public authorities can solve the problems affecting their population is to understand what's happening, through studies, analysis and research. That's why we can say many of our municipalities lack a structure that is the foundation for every service aimed at the population.</p>
+          <p>To minimise this problem, municipalities need an up-to-date, well-built Multipurpose Technical Cadastre with accurate cartographic representation — the foundation on which effective territorial management is built.</p>
+        `
+      }
+    },
+
+    p11: {
+      image: "assets/img/blog/p11.jpg",
+      pt: {
+        cat: "Topografia", date: "3 min de leitura",
+        title: "Planimetria e Altimetria: as duas faces da topografia plana",
+        body: `
+          <p>O estudo da topografia plana divide-se em duas áreas complementares: a planimetria e a altimetria.</p>
+          <h3>Planimetria</h3>
+          <p>Na planimetria, os elementos da cadeia são projectados num plano horizontal, sem considerar a sua diferença de elevação — ou seja, estuda superfícies planas. É o tipo de levantamento usado, por exemplo, para determinar a área de uma poligonal.</p>
+          <h3>Altimetria</h3>
+          <p>A altimetria estuda as diferenças de elevação de pontos na superfície da Terra, dando a sua posição absoluta em altura. É o levantamento usado, por exemplo, na obtenção de cotas de um terreno.</p>
+          <h3>Porque as duas são necessárias</h3>
+          <p>Na prática, quase todos os projectos de engenharia precisam das duas — a planimetria dá a forma e a posição do terreno vista de cima, e a altimetria dá o relevo e as diferenças de nível que determinam como a água escoa, onde se corta ou aterra, e como uma estrada, edifício ou rede de infra-estruturas se vai encaixar no terreno real.</p>
+        `
+      },
+      en: {
+        cat: "Surveying", date: "3 min read",
+        title: "Planimetry and Altimetry: the two sides of plane surveying",
+        body: `
+          <p>The study of plane surveying is divided into two complementary areas: planimetry and altimetry.</p>
+          <h3>Planimetry</h3>
+          <p>In planimetry, the survey elements are projected onto a horizontal plane, without accounting for differences in elevation — in other words, it studies flat surfaces. This is the type of survey used, for example, to determine the area of a boundary polygon.</p>
+          <h3>Altimetry</h3>
+          <p>Altimetry studies the differences in elevation between points on the Earth's surface, giving their absolute position in height. This is the survey used, for example, to obtain a site's elevation levels.</p>
+          <h3>Why both are needed</h3>
+          <p>In practice, almost every engineering project needs both — planimetry gives the shape and position of the terrain seen from above, while altimetry gives the relief and level differences that determine how water drains, where to cut or fill, and how a road, building or infrastructure network will actually fit the real terrain.</p>
+        `
+      }
+    },
+
+    p12: {
+      image: "assets/img/blog/p12.jpg",
+      pt: {
+        cat: "Formação", date: "5 min de leitura",
+        title: "O que é preciso para ser um topógrafo?",
+        body: `
+          <p>Ser topógrafo envolve compreender a geografia e a topografia de áreas específicas. Trata-se de interpretar os relevos do terreno, além de realizar medições precisas para o mapear.</p>
+          <h3>Conhecimentos essenciais</h3>
+          <ul>
+            <li>Cartografia — para interpretar mapas correctamente</li>
+            <li>Geometria — para ter noção visual de distância e ângulo</li>
+            <li>Princípios de medição, como a fotogrametria — para que o trabalho topográfico seja realizado com eficácia e os dados recolhidos com precisão</li>
+            <li>Boa noção de escalas — para calcular e interpretar correctamente a área de um lote ou terreno</li>
+          </ul>
+          <h3>Como começar</h3>
+          <p>O curso de Topografia prestado pela GEPGEO ensina o que é preciso para adquirir um conhecimento base e caminhar para se tornar topógrafo — desde a interpretação de gráficos e mapas até ao levantamento de terrenos.</p>
+          <p>No final do curso, é emitido um certificado que pode ser usado para atestar o conhecimento adquirido na área — uma mais-valia para quem quer entrar ou avançar na profissão.</p>
+        `
+      },
+      en: {
+        cat: "Training", date: "5 min read",
+        title: "What does it take to become a surveyor?",
+        body: `
+          <p>Being a surveyor means understanding the geography and topography of specific areas. It involves interpreting the terrain's relief, as well as taking precise measurements to map it.</p>
+          <h3>Essential knowledge</h3>
+          <ul>
+            <li>Cartography — to correctly interpret maps</li>
+            <li>Geometry — for a visual sense of distance and angle</li>
+            <li>Measurement principles, such as photogrammetry — so that surveying work is carried out effectively and data is collected accurately</li>
+            <li>A solid grasp of scales — to correctly calculate and interpret the area of a plot or lot</li>
+          </ul>
+          <h3>How to get started</h3>
+          <p>The Surveying course offered by GEPGEO teaches what's needed to build a foundational knowledge and work towards becoming a surveyor — from reading charts and maps to carrying out land surveys.</p>
+          <p>A certificate is issued at the end of the course, which can be used to attest to the knowledge gained in the field — a real asset for anyone looking to enter or advance in the profession.</p>
+        `
+      }
+    },
+
+    p13: {
+      image: "assets/img/blog/p13.jpg",
+      pt: {
+        cat: "Engenharia Civil", date: "6 min de leitura",
+        title: "Aterro sanitário: o que é e porque é importante",
+        body: `
+          <p>Um aterro sanitário é um método de engenharia para a disposição de resíduos sólidos no solo, com o objectivo de proteger o meio ambiente: os resíduos são espalhados em pequenas camadas, compactados ao menor volume prático e cobertos com terra ao final da jornada de trabalho, evitando efeitos adversos no ambiente.</p>
+          <h3>Tipos de aterro sanitário</h3>
+          <ul>
+            <li>Aterro convencional</li>
+            <li>Aterro em valas</li>
+          </ul>
+          <h3>Vantagens da implementação de aterros sanitários</h3>
+          <ul>
+            <li>Redução das emissões de gases de efeito estufa</li>
+            <li>Criação de novos postos de trabalho e geração de rendimento para catadores</li>
+            <li>Valorização dos resíduos, com possibilidade de reciclar, reaproveitar e gerar energia a partir dos gases de decomposição ou de resíduos de alto poder calorífico</li>
+            <li>Melhoria da imagem das cidades, com redução de lixeiras a céu aberto</li>
+            <li>Redução da poluição atmosférica, visual, dos solos e aquática</li>
+            <li>Melhoria da saúde pública</li>
+          </ul>
+          <h3>Porque são importantes</h3>
+          <p>Os aterros são importantes porque solucionam parte dos problemas causados pelo excesso de lixo gerado nas grandes cidades, e diminuem os impactos ambientais dos resíduos. Minimizam os resíduos produzidos e agregam valor aos materiais que podem ser reutilizados na indústria — por reciclagem ou agricultura orgânica, através da compostagem — reduzindo assim a extracção de matéria-prima e a energia gasta no fabrico de novos produtos.</p>
+          <p>Do ponto de vista ecológico, os aterros sanitários são considerados os locais mais adequados para a disposição final e tratamento de resíduos sólidos. A escolha do local para a construção de um aterro sanitário é, por isso, determinante para o seu sucesso, evitando gastos não previstos com infra-estrutura.</p>
+        `
+      },
+      en: {
+        cat: "Civil Engineering", date: "6 min read",
+        title: "Sanitary landfills: what they are and why they matter",
+        body: `
+          <p>A sanitary landfill is an engineering method for disposing of solid waste in the ground, aimed at protecting the environment: waste is spread in thin layers, compacted to the smallest practical volume, and covered with soil at the end of each working day, preventing adverse effects on the environment.</p>
+          <h3>Types of sanitary landfill</h3>
+          <ul>
+            <li>Conventional landfill</li>
+            <li>Trench landfill</li>
+          </ul>
+          <h3>Advantages of sanitary landfills</h3>
+          <ul>
+            <li>Reduced greenhouse gas emissions</li>
+            <li>New jobs and income generation for waste pickers</li>
+            <li>Value recovery from waste, with the potential to recycle, reuse and generate energy from decomposition gases or high-calorific waste</li>
+            <li>Improved image of cities, with fewer open-air dumps</li>
+            <li>Reduced air, visual, soil and water pollution</li>
+            <li>Improved public health</li>
+          </ul>
+          <h3>Why they matter</h3>
+          <p>Landfills matter because they solve part of the problems caused by the excess waste generated in large cities, and reduce the environmental impact of that waste. They minimise the waste produced and add value to materials that can be reused in industry — through recycling or organic farming via composting — reducing the extraction of raw materials and the energy spent manufacturing new products.</p>
+          <p>From an ecological standpoint, sanitary landfills are considered the most suitable sites for the final disposal and treatment of solid waste. Choosing the right site for building a sanitary landfill is therefore decisive for its success, avoiding unplanned infrastructure costs.</p>
+        `
+      }
+    },
+
+    p14: {
+      image: "assets/img/blog/p14.jpg",
+      pt: {
+        cat: "Geoprocessamento", date: "5 min de leitura",
+        title: "Satélites geoestacionários vs. deteção remota: qual a diferença?",
+        body: `
+          <p>Os satélites geoestacionários são aqueles cujo tempo de órbita é igual a 24 horas — o mesmo que o período de rotação da Terra. É por essa razão que parecem pontos fixos no céu quando observados a partir do solo.</p>
+          <h3>Para que servem os satélites geoestacionários</h3>
+          <p>São muito utilizados em comunicações, porque o seu movimento acompanha o do planeta e, assim, podem oferecer o serviço de forma ininterrupta. Têm ainda uma larga área de actuação, conseguindo atingir regiões distantes. Satélites de comunicação e de meteorologia — como o ANGOSAT-2 — utilizam este tipo de órbita.</p>
+          <h3>E os satélites de deteção remota?</h3>
+          <p>Já os satélites de deteção remota seguem uma órbita à volta da Terra que depende das características e objectivos dos sensores a bordo. Em geral, as órbitas são definidas pela altitude, orientação e rotação relativamente à Terra.</p>
+          <p>A maioria dos satélites de deteção remota é desenhada para descrever uma órbita de Norte para Sul. Esta órbita, combinada com o movimento de rotação da Terra (de Oeste para Este), permite-lhes cobrir grande parte da superfície terrestre num determinado período de tempo. Por causa da sua inclinação relativamente a uma linha traçada entre os Polos Norte e Sul, estas órbitas são chamadas de quase-polares.</p>
+          <h3>Porque a diferença importa para a gestão territorial</h3>
+          <p>Perceber esta diferença é fundamental para quem trabalha com dados geoespaciais: os satélites geoestacionários dão-nos comunicação e observação contínua de uma mesma área (como meteorologia em tempo quase real), enquanto os satélites de deteção remota em órbita quase-polar são os que fornecem, ao longo do tempo, as imagens detalhadas de todo o território que alimentam o mapeamento, o cadastro e o planeamento territorial.</p>
+        `
+      },
+      en: {
+        cat: "Geoprocessing", date: "5 min read",
+        title: "Geostationary satellites vs. remote sensing: what's the difference?",
+        body: `
+          <p>Geostationary satellites are those whose orbital period equals 24 hours — the same as the Earth's rotation period. That's why they appear as fixed points in the sky when observed from the ground.</p>
+          <h3>What geostationary satellites are used for</h3>
+          <p>They're widely used for communications, because their movement matches the planet's, letting them provide uninterrupted service. They also cover a wide operating area, reaching distant regions. Communication and weather satellites — such as ANGOSAT-2 — use this type of orbit.</p>
+          <h3>What about remote-sensing satellites?</h3>
+          <p>Remote-sensing satellites, on the other hand, follow an orbit around the Earth that depends on the characteristics and objectives of the sensors on board. In general, orbits are defined by altitude, orientation and rotation relative to the Earth.</p>
+          <p>Most remote-sensing satellites are designed to follow a North-to-South orbit. Combined with the Earth's own rotation (West to East), this lets them cover most of the Earth's surface over a given period. Because of their inclination relative to a line drawn between the North and South Poles, these orbits are called near-polar.</p>
+          <h3>Why the difference matters for territorial management</h3>
+          <p>Understanding this difference is essential for anyone working with geospatial data: geostationary satellites give us communication and near-continuous observation of the same area (such as near real-time weather), while near-polar remote-sensing satellites are the ones that, over time, supply the detailed imagery of an entire territory that feeds mapping, land registry and territorial planning.</p>
+        `
+      }
+    },
+
+    p15: {
+      image: "assets/img/blog/p15.jpg",
+      pt: {
+        cat: "Topografia", date: "3 min de leitura",
+        title: "Os 5 tipos de medições feitas em topografia",
+        body: `
+          <p>A matéria-prima da topografia são as medições. Independentemente da finalidade do trabalho, são sempre realizados cinco tipos de medição:</p>
+          <ul>
+            <li>Distâncias horizontais</li>
+            <li>Distâncias verticais</li>
+            <li>Distâncias inclinadas</li>
+            <li>Ângulos horizontais</li>
+            <li>Ângulos verticais</li>
+          </ul>
+          <p>É a combinação destes cinco tipos de medição, recolhidos com instrumentos como a Estação Total ou o GPS Geodésico RTK, que permite reconstituir com precisão a forma e o relevo de qualquer terreno — seja para um levantamento cadastral, uma implantação de obra ou um cálculo de volumes.</p>
+        `
+      },
+      en: {
+        cat: "Surveying", date: "3 min read",
+        title: "The 5 types of measurements taken in surveying",
+        body: `
+          <p>Measurements are the raw material of surveying. Regardless of the purpose of the work, five types of measurement are always carried out:</p>
+          <ul>
+            <li>Horizontal distances</li>
+            <li>Vertical distances</li>
+            <li>Slope (inclined) distances</li>
+            <li>Horizontal angles</li>
+            <li>Vertical angles</li>
+          </ul>
+          <p>It's the combination of these five measurement types, collected with instruments such as the Total Station or RTK Geodetic GPS, that makes it possible to accurately reconstruct the shape and relief of any terrain — whether for a cadastral survey, a construction setting-out, or a volume calculation.</p>
+        `
+      }
+    },
+
+    p16: {
+      image: "assets/img/blog/p16.jpg",
+      pt: {
+        cat: "SIG/GIS", date: "5 min de leitura",
+        title: "Coordenadas UTM vs. coordenadas geográficas: qual a diferença?",
+        body: `
+          <p>O sistema de coordenadas UTM é o mais utilizado em trabalhos que envolvem sistemas de informação geográfica, por apresentar facilidades no manuseamento e adoptar uma projecção cartográfica que trabalha com paralelos e meridianos rectos e equidistantes.</p>
+          <h3>Coordenadas UTM</h3>
+          <p>Essa projecção foi concebida por Gerhard Kremer, mais conhecido como Mercator, e publicada em 1569, dando origem ao sistema UTM (Universal Transversa de Mercator). Caracteriza-se por adoptar coordenadas métricas, planas ou rectangulares, e utiliza um tipo particular de projecção cilíndrica para representar a Terra sobre um plano — permitindo referenciar qualquer ponto da superfície terrestre.</p>
+          <h3>Coordenadas Geográficas</h3>
+          <p>As coordenadas geográficas (latitude e longitude geográficas) são determinadas a partir da adopção de um modelo esférico — de raio constante — para a Terra. Este modelo esférico é uma simplificação do modelo elipsoidal, e permite expressar com exactidão um lugar na superfície da Terra. Estas coordenadas são representadas por meio da latitude e da longitude, dadas em medidas angulares.</p>
+          <h3>Qual escolher</h3>
+          <p>Na prática, as coordenadas geográficas são ideais para localizar um ponto em qualquer parte do globo de forma universal, enquanto as coordenadas UTM, por serem métricas e planas, facilitam muito o cálculo de distâncias e áreas — por isso são a escolha habitual em projectos de topografia, cadastro e engenharia civil.</p>
+        `
+      },
+      en: {
+        cat: "GIS", date: "5 min read",
+        title: "UTM coordinates vs. geographic coordinates: what's the difference?",
+        body: `
+          <p>The UTM coordinate system is the most widely used in work involving geographic information systems, since it's easy to handle and uses a cartographic projection built on straight, equidistant parallels and meridians.</p>
+          <h3>UTM Coordinates</h3>
+          <p>This projection was devised by Gerhard Kremer, better known as Mercator, and published in 1569, giving rise to the UTM (Universal Transverse Mercator) system. It's characterised by the use of metric, plane or rectangular coordinates, and uses a particular type of cylindrical projection to represent the Earth on a plane — allowing any point on the Earth's surface to be referenced.</p>
+          <h3>Geographic Coordinates</h3>
+          <p>Geographic coordinates (geographic latitude and longitude) are determined using a spherical model — of constant radius — for the Earth. This spherical model is a simplification of the ellipsoidal model, and lets a location on the Earth's surface be expressed accurately. These coordinates are represented through latitude and longitude, given in angular measurements.</p>
+          <h3>Which one to choose</h3>
+          <p>In practice, geographic coordinates are ideal for locating a point anywhere on the globe in a universal way, while UTM coordinates, being metric and planar, make calculating distances and areas much easier — which is why they're the usual choice in surveying, cadastre and civil engineering projects.</p>
+        `
+      }
+    },
+
+    p17: {
+      image: "assets/img/blog/p17.jpg",
+      pt: {
+        cat: "Topografia", date: "3 min de leitura",
+        title: "Para que servem os perfis topográficos?",
+        body: `
+          <p>Os perfis topográficos são gráficos feitos a partir dos mapas de curvas de nível, que representam de forma mais detalhada as variações do relevo de um terreno.</p>
+          <h3>Onde são usados</h3>
+          <p>São normalmente utilizados em obras como redes de esgoto, gasodutos, construção de estradas, túneis e outras obras de engenharia civil — sempre que é preciso analisar o relevo de um local antes ou durante o projecto.</p>
+          <h3>Porque são importantes</h3>
+          <p>Um perfil topográfico bem elaborado permite prever, ainda em fase de projecto, onde vão surgir cortes e aterros, qual o declive de uma linha de esgoto ou de uma via, e onde uma infra-estrutura enterrada vai atravessar diferentes camadas de terreno — evitando surpresas dispendiosas já em obra.</p>
+          <p>Para saber mais sobre os nossos serviços de levantamento topográfico, fale com a nossa equipa.</p>
+        `
+      },
+      en: {
+        cat: "Surveying", date: "3 min read",
+        title: "What are topographic profiles used for?",
+        body: `
+          <p>Topographic profiles are charts produced from contour-line maps, representing the variations in a terrain's relief in much greater detail.</p>
+          <h3>Where they are used</h3>
+          <p>They are normally used in projects such as sewage networks, gas pipelines, road construction, tunnels and other civil-engineering works — whenever it's necessary to analyse a site's relief before or during the project.</p>
+          <h3>Why they matter</h3>
+          <p>A well-built topographic profile lets you predict, still at the design stage, where cuts and fills will occur, the slope of a sewer line or road, and where a buried pipeline will cross different terrain layers — avoiding costly surprises once construction is underway.</p>
+          <p>To learn more about our topographic surveying services, get in touch with our team.</p>
         `
       }
     }

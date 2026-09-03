@@ -28,11 +28,11 @@
     //   "geral"  → usado por Contacto Geral + Agendamento
     //   "pedido" → usado por Solicitar Serviço + Cursos
     emailjs: {
-      publicKey: "02CAGxKr0jIaa-CqG",
-      serviceId: "service_p929i2p",
+      publicKey: "gzJn2wxmaqU1ZzCOC",
+      serviceId: "service_oxq5wys",
       templates: {
-        geral: "template_jkfv32p",   // Contacto Geral + Agendamento
-        pedido: "template_72ixmfw"   // Solicitar Serviço + Cursos
+        geral: "template_3ee6ya7",   // Contacto Geral + Agendamento
+        pedido: "template_emsjzdz"   // Solicitar Serviço + Cursos
       }
     }
   };
@@ -374,5 +374,60 @@
       const href = a.getAttribute("href");
       if (href === path) a.setAttribute("aria-current", "page");
     });
+  })();
+
+  /* -------------------------------------------------------
+     12. Barra fina de progresso de leitura, no topo da página
+  --------------------------------------------------------*/
+  (function scrollProgress() {
+    const bar = document.createElement("div");
+    bar.className = "scroll-progress";
+    document.body.appendChild(bar);
+    const update = () => {
+      const doc = document.documentElement;
+      const scrollable = doc.scrollHeight - doc.clientHeight;
+      const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+      bar.style.width = pct + "%";
+    };
+    document.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+
+  /* -------------------------------------------------------
+     13. Revelar conteúdo em fade + subida, à medida que se
+         percorre a página (respeita prefers-reduced-motion,
+         que já força transições quase instantâneas — ver topo
+         do style.css)
+  --------------------------------------------------------*/
+  (function scrollReveal() {
+    const selector = [
+      ".section-head", ".tick-card", ".product-card", ".post-card",
+      ".gallery-item", ".news-item", ".faq-item", ".team-card", ".timeline-item"
+    ].join(",");
+    const els = document.querySelectorAll(selector);
+    if (!els.length || !("IntersectionObserver" in window)) return;
+
+    // Pequeno desfasamento em cascata para elementos irmãos dentro do
+    // mesmo contentor (grelhas de cartões, por exemplo), até um máximo
+    // de 6 níveis — dá um efeito de onda suave, sem exagerar.
+    const siblingIndex = new Map();
+    els.forEach((el) => {
+      el.classList.add("reveal");
+      const parent = el.parentElement;
+      const idx = siblingIndex.get(parent) || 0;
+      el.style.transitionDelay = Math.min(idx, 6) * 70 + "ms";
+      siblingIndex.set(parent, idx + 1);
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+
+    els.forEach((el) => io.observe(el));
   })();
 })();

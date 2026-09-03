@@ -146,6 +146,13 @@ p{color:var(--slate)}
 }
 .site-header.is-scrolled{box-shadow:0 10px 30px rgba(0,0,0,.18)}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+/* ---------- Barra de progresso de leitura ---------- */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--green-500);z-index:999;transition:width .1s linear}
+
+/* ---------- Revelar conteúdo em fade + subida ao percorrer a página ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
 .brand{display:flex;align-items:center;gap:12px;flex:none}
 .brand img{width:44px;height:44px;border-radius:50%;background:var(--white);object-fit:cover}
 .brand-name{font-family:var(--font-display);font-weight:700;color:var(--white);font-size:1.05rem;line-height:1.1}
@@ -369,8 +376,19 @@ p{color:var(--slate)}
 .portfolio-overlay .eyebrow{color:var(--green-400);margin-bottom:8px}
 .portfolio-overlay h3{color:var(--white);font-size:1.15rem}
 .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
-.filter-bar button{padding:9px 18px;border-radius:999px;border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--slate)}
+.filter-bar button{
+  padding:9px 18px;border-radius:999px;border:1px solid var(--line);font-size:.85rem;font-weight:600;
+  color:var(--slate);background:var(--white);cursor:pointer;
+  transition:background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .2s ease;
+}
+.filter-bar button:hover{
+  background:var(--green-100);border-color:var(--green-500);color:var(--green-700);transform:translateY(-2px);
+  box-shadow:var(--shadow-s);
+}
+.filter-bar button:active{transform:translateY(0)}
+.filter-bar button:focus-visible{outline:2px solid var(--green-500);outline-offset:2px}
 .filter-bar button.is-active{background:var(--navy-900);color:var(--white);border-color:var(--navy-900)}
+.filter-bar button.is-active:hover{background:var(--navy-800);border-color:var(--navy-800);color:var(--white);transform:translateY(-2px)}
 
 /* Galeria (lightbox) */
 .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -495,6 +513,19 @@ body.product-open{overflow:hidden}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-a p{padding:0 40px 24px 4px;font-size:.95rem}
 .faq-cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.faq-cats button{
+  padding:9px 18px;border-radius:999px;border:1px solid var(--line);font-size:.85rem;font-weight:600;
+  color:var(--slate);background:var(--white);cursor:pointer;
+  transition:background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .2s ease;
+}
+.faq-cats button:hover{
+  background:var(--green-100);border-color:var(--green-500);color:var(--green-700);transform:translateY(-2px);
+  box-shadow:var(--shadow-s);
+}
+.faq-cats button:active{transform:translateY(0)}
+.faq-cats button:focus-visible{outline:2px solid var(--green-500);outline-offset:2px}
+.faq-cats button.is-active{background:var(--navy-900);color:var(--white);border-color:var(--navy-900)}
+.faq-cats button.is-active:hover{background:var(--navy-800);border-color:var(--navy-800);color:var(--white);transform:translateY(-2px)}
 
 /* Formulários */
 .form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);padding:40px;box-shadow:var(--shadow-s)}

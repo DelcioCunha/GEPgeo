@@ -311,6 +311,75 @@
         ],
         audience: "Land-subdivision developers, construction companies and large-scale infrastructure projects."
       }
+    },
+
+    "servico-topografia-geodesica": {
+      pt: {
+        intro: "Levantamento topográfico e implantação de projectos com GPS Geodésico RTK e Estação Total — a base de qualquer projecto de engenharia, adaptada à escala e ao tipo de obra.",
+        highlights: [
+          "Levantamento topográfico e implantação de projectos",
+          "Georreferenciamento e nivelamento de precisão",
+          "Croquis de localização e determinação de limites",
+          "Relatórios técnicos e laudos de verticalidade"
+        ],
+        audience: "Construtoras, promotores de obras e empresas que precisam de rigor geodésico em qualquer fase do projecto."
+      },
+      en: {
+        intro: "Topographic survey and project setting-out using RTK Geodetic GPS and Total Station — the foundation of any engineering project, adapted to the scale and type of works.",
+        highlights: [
+          "Topographic survey and project setting-out",
+          "Precision georeferencing and levelling",
+          "Location sketches and boundary determination",
+          "Technical reports and verticality assessments"
+        ],
+        audience: "Construction companies, project developers and businesses that need geodetic precision at any project stage."
+      }
+    },
+
+    "servico-volumetria": {
+      pt: {
+        intro: "Cálculo de volumes de corte e aterro para mineração, terraplanagem e obras lineares, com processamento dos dados em AutoCAD Civil 3D.",
+        highlights: [
+          "Cálculo de volumes de corte e aterro",
+          "Acompanhamento volumétrico de lavra e remoção de estéril",
+          "Modelação de superfícies em AutoCAD Civil 3D",
+          "Marcação de cortes e projectos de taludes"
+        ],
+        audience: "Operações de mineração, empresas de terraplanagem e projectos de obras lineares (estradas, drenagem)."
+      },
+      en: {
+        intro: "Cut-and-fill volume calculation for mining, earthworks and linear projects, with data processed in AutoCAD Civil 3D.",
+        highlights: [
+          "Cut-and-fill volume calculation",
+          "Volume tracking for mining and waste-rock removal",
+          "Surface modelling in AutoCAD Civil 3D",
+          "Cut marking and slope design"
+        ],
+        audience: "Mining operations, earthworks companies and linear infrastructure projects (roads, drainage)."
+      }
+    },
+
+    "servico-fiscalizacao": {
+      pt: {
+        intro: "Acompanhamos a execução de projectos com supervisão geral e controlo de qualidade técnica, assegurando que a obra corresponde exactamente ao projectado.",
+        highlights: [
+          "Controlo de qualidade técnica em obra",
+          "Monitoramento contínuo do avanço do projecto",
+          "Supervisão geral de execução",
+          "Relatórios claros e regulares para o cliente"
+        ],
+        audience: "Donos de obra, empresas e entidades públicas que precisam de fiscalização técnica independente."
+      },
+      en: {
+        intro: "We follow project execution with general supervision and technical quality control, ensuring the works match exactly what was designed.",
+        highlights: [
+          "Technical quality control on site",
+          "Continuous monitoring of project progress",
+          "General execution supervision",
+          "Clear, regular reporting for the client"
+        ],
+        audience: "Project owners, companies and public entities that need independent technical supervision."
+      }
     }
 
   };
